@@ -1,0 +1,98 @@
+<div class="modal-background">
+</div>
+
+<div class="modal">
+  <div class="modal-top">
+    <div class="modal-top-left">
+      What's your question?
+    </div>
+    <div class="modal-top-right">
+      <i class="fa fa-times fa-3x"></i>
+    </div>
+  </div>
+  <div class="modal-bottom">
+    <div class="modal-bottom-left">
+      <select id="label-select" class="categories" name="label-select">
+        <option disabled selected> -- select a category -- </option>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="jquery">jquery</option>
+        <option value="node">node</option>
+      </select>
+      <textarea id="q-input" maxlength="220" placeholder="What's on your mind?"></textarea>
+    </div>
+    <div class="modal-bottom-right">
+      <button id="q-button" type="submit" name="button">Ask!</button>
+    </div>
+  </div>
+</div>
+
+<div class="dash-container">
+  <div class="nav-container">
+    <div class="nav nav-left">
+      <i id="trophy" class="fa fa-trophy fa-3x"></i><div>Leaderboard</div>
+    </div>
+    <div class="nav nav-center">
+      <img id="logo" src="/images/Quonvo Maybe.png" alt="">
+    </div>
+    <div class="nav nav-right">
+      <i id="profile" class="fa fa-user-circle-o fa-3x"></i><span id="user">{{username}}&nbsp;&nbsp;<i class="fa fa-chevron-circle-down"></i></span>
+    </div>
+  </div>
+
+  <div class="body-container">
+
+    <!-- QUESTION SECTION -->
+
+    <div class="questions">
+      <div class="questions-title">
+        <i class="fa fa-question"></i>&nbsp;Questions&nbsp;<i class="fa fa-question"></i>
+      </div>
+      <div class="questions-list">
+      </div>
+    </div>
+
+    <!-- CHAT SECTION -->
+
+    <div class="chat">
+      <div class="chat-main">
+      </div>
+
+      <i id="add-question-button" class="fa fa-plus-circle fa-5x"></i>
+
+      <!-- CHAT COMPOSE -->
+
+      <div class="chat-compose">
+        <div class="compose-area">
+          <textarea id="message-body" type="text" name="message-body" placeholder="Your message here..."></textarea>
+        </div>
+        <div class="compose-button">
+          <i id="send-button" class="fa fa-comment fa-4x"></i>
+        </div>
+      </div>
+
+      <div class="chat-list">
+      </div>
+    </div>
+
+    <!-- ARCHIVE SECTION -->
+
+    <div class="archives">
+      <div class="archives-title">
+        <i class="fa fa-archive"></i>&nbsp;Archives&nbsp;<i class="fa fa-archive"></i>
+      </div>
+      <div class="archives-list">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="/scripts/script.js"></script>
